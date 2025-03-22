@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>GLORY EDEM - Task 1</title>
+    <style>
+      .block {
+        background-color: gainsboro;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GLORY EDEM - Task 1</h1>
+    <h2>My code:</h2>
+    <p id="code" class="block"></p>
+    <h2>Results of my code:</h2>
+    <p id="results" class="block"></p>
+    <script>
+      // Define data
+      let data = [
+          {"page_id": 6682420, "creation_date": "2021-09-13", "title": "André Baniwa"},
+          {"page_id": 4246775, "creation_date": "2013-12-10", "title": "Benki Piyãko"},
+          {"page_id": 5882073, "creation_date": "2018-12-03", "title": "Célia Xakriabá"},
+          {"page_id": 6977673, "creation_date": "2022-10-05", "title": "Chirley Pankará"},
+          {"page_id": 7069044, "creation_date": "2023-02-16", "title": "Cristine Takuá"},
+          {"page_id": 2119511, "creation_date": "2009-01-28", "title": "Eliane Potiguara"},
+          {"page_id": 6714407, "creation_date": "2021-10-09", "title": "Jaider Esbell"},
+          {"page_id": 6977117, "creation_date": "2022-10-04", "title": "Jerônimo Rodrigues"},
+          {"page_id": 6935831, "creation_date": "2022-08-02", "title": "Nanblá Gakran"},
+          {"page_id": 4908665, "creation_date": "2015-11-13", "title": "Sônia Guajajara"},
+          {"page_id": 5886895, "creation_date": "2018-12-12", "title": "Vãngri Kaingáng"},
+          {"page_id": 6549130, "creation_date": "2021-04-10", "title": "Zezico Guajajara"},
+      ];
+
+      // This will display in "My code" section
+      const myCode = `
+        const months = [
+          "January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"
+        ];
+
+        class DataUtil {
+          static formatDate(date) {
+            const [year, month, day] = date.split('-');
+            return \`\${months[parseInt(month) - 1]} \${parseInt(day)}, \${year}\`;
+          }
+
+          static formatTitle(info) {
+            return \`Article "\${info.title}" (Page ID \${info.page_id}) was created at \${this.formatDate(info.creation_date)}.\`;
+          }
+
+          static formatAll(articles) {
+            return articles.map(this.formatTitle.bind(this)).join("\\n");
+          }
+        }
+
+        const result = DataUtil.formatAll(data);
+        console.log(result);
+        document.getElementById("results").innerText = result;
+      `;
+      document.getElementById("code").innerText = myCode;
+
+      // logic to manipulate a json object and print in a readable format
+      const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      class DataUtil {
+        static formatDate(date) {
+          const [year, month, day] = date.split("-");
+          return `${months[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+        }
+
+        static formatTitle(info) {
+          return `Article "${info.title}" (Page ID ${
+            info.page_id
+          }) was created at ${this.formatDate(info.creation_date)}.`;
+        }
+
+        static formatAll(articles) {
+          return articles.map(this.formatTitle.bind(this)).join("\n");
+        }
+      }
+
+      const result = DataUtil.formatAll(data);
+      console.log(result);
+      document.getElementById("results").innerText = result;
+    </script>
+  </body>
+</html>
