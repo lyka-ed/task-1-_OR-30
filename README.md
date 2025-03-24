@@ -48,12 +48,12 @@ I created a vairable named `months` that contains an array of months and defined
 - JavaScript
 
 ## Expected Output
-Article "André Baniwa" (Page ID 6682420) was created at September 13, 2021.
-Article "Benki Piyãko" (Page ID 4246775) was created at December 10, 2013.
-Article "Célia Xakriabá" (Page ID 5882073) was created at December 3, 2018.
-Article "Chirley Pankará" (Page ID 6977673) was created at October 5, 2022.
-Article "Cristine Takuá" (Page ID 7069044) was created at February 16, 2023.
-Article "Benki Piyãko" (Page ID 4246775) was created at December 10, 2013.
-Article "Célia Xakriabá" (Page ID 5882073) was created at December 3, 2018.
-Article "Chirley Pankará" (Page ID 6977673) was created at October 5, 2022.
-Article "Cristine Takuá" (Page ID 7069044) was created at February 16, 2023.
+- Article "André Baniwa" (Page ID 6682420) was created at September 13, 2021.
+- Article "Benki Piyãko" (Page ID 4246775) was created at December 10, 2013.
+- Article "Célia Xakriabá" (Page ID 5882073) was created at December 3, 2018.
+- Article "Chirley Pankará" (Page ID 6977673) was created at October 5, 2022.
+- Article "Cristine Takuá" (Page ID 7069044) was created at February 16, 2023.
+- Article "Benki Piyãko" (Page ID 4246775) was created at December 10, 2013.
+- Article "Célia Xakriabá" (Page ID 5882073) was created at December 3, 2018.
+- Article "Chirley Pankará" (Page ID 6977673) was created at October 5, 2022.
+- Article "Cristine Takuá" (Page ID 7069044) was created at February 16, 2023.
